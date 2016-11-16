@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">俊客到家老板端</string>
+    <string name="empty">暂无数据</string>
+    <string name="empty2">暂无订单</string>
+    <string name="net">亲~请检查你的网络</string>
+    <string name="input_phone_eleven">请输入11位手机号</string>
+</resources>

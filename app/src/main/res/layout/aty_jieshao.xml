@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/jieshao_etxt_name"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#fff"
+        android:gravity="top"
+        android:hint="请输入水站介绍"
+        android:maxLength="150"
+        android:padding="15px"
+        android:paddingLeft="30px"
+        android:textColorHint="#999999"
+        android:textSize="28px" />
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/jieshao_fb"
+        android:layout_width="690px"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70px"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

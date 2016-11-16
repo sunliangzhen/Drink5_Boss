@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="30px">
+
+        <TextView
+            android:id="@+id/newsde_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="3月25日"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:id="@+id/newsde_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:paddingLeft="30px"
+            android:text="[商户提出绑定]"
+            android:textColor="#2063ac"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:id="@+id/newsde_relay_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px">
+
+            <ImageView
+                android:id="@+id/newsdetails_imgv_head"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="20px"
+                android:src="@drawable/ic_client_test" />
+
+            <TextView
+                android:id="@+id/newsdetails_imgv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@id/newsdetails_imgv_head"
+                android:text="李师傅"
+                android:textColor="#282828"
+                android:textSize="28px" />
+
+            <LinearLayout
+                android:id="@+id/newsdetails_linlay_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newsdetails_imgv_name"
+                android:layout_marginTop="25px"
+                android:layout_toRightOf="@id/newsdetails_imgv_head"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/newsde_img_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/newsde_img_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/newsde_img_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/newsde_img_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/newsde_img_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newsde_linlay_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsdetails_linlay_01"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="15px"
+                android:layout_toRightOf="@id/newsdetails_imgv_head"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平均时长:"
+                    android:textColor="#999999"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/newsde_tv_avgtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="34分钟"
+                    android:textColor="#FE4C52"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="配送信息:"
+                    android:textColor="#999999"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/newsde_tv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="34单"
+                    android:textColor="#FE4C52"
+                    android:textSize="22px" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/newsde_linlay_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53px"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_newsde_noagree"
+                android:layout_width="160px"
+                android:layout_height="58px"
+                android:background="@drawable/shape_details_yel"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="#ffc000"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/id_newsde_agree"
+                android:layout_width="160px"
+                android:layout_height="58px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/shape_details_yel2"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="#fff"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/newsde_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35px"
+            android:paddingLeft="30px"
+            android:textColor="#999999"
+            android:textSize="28px"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

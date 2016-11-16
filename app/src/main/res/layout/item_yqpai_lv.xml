@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="108px"
+    android:background="#fff"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/item_yqpailv_shu"
+        android:layout_width="70px"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="25px"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#292929"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/item_yqpai_imgv_head"
+        android:layout_width="76px"
+        android:layout_height="76px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20px"
+        android:layout_toRightOf="@id/item_yqpailv_shu"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_client_test" />
+
+    <TextView
+        android:id="@+id/item_yqpailv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_yqpai_imgv_head"
+        android:layout_toRightOf="@id/item_yqpai_imgv_head"
+        android:text="唐玉"
+        android:textColor="#292929"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/item_yqpailv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_yqpai_imgv_head"
+        android:layout_toRightOf="@id/item_yqpai_imgv_head"
+        android:text="莫如会"
+        android:textColor="#999999"
+        android:textSize="24px" />
+
+    <LinearLayout
+        android:id="@+id/item_yqpai_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请:"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/item_yqpailv_peo"
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="2000人"
+            android:textColor="#292929"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_yqpai_01"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖励:"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/item_yqpailv_peo2"
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:gravity="left"
+            android:text="4000人"
+            android:textColor="#292929"
+            android:textSize="24px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="40px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40px"
+        android:layout_toLeftOf="@+id/item_yqpai_01"
+        android:background="#ebebeb" />
+</RelativeLayout>

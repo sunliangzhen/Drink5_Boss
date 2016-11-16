@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/include_total_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="128"
+                android:textColor="#fd9a00"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="总收入(元)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_totaltong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_totaltongprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="总送水(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_totalticknum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_totaltickprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="总销售水票(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/include_total_upprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="128"
+                android:textColor="#fd9a00"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="线上收取(元)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_tong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_tongprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="送水桶(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_piao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_piaoprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="销售水票(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/include_total_di"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="128"
+                android:textColor="#fd9a00"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="京币抵扣(元)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/include_total_uppriceb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="128"
+                android:textColor="#fd9a00"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="线下收取(元)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_tong2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_tongprice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="送水桶(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/include_total_piao2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15px"
+                    android:text="128"
+                    android:textColor="#fd9a00"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/include_total_piaoprice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="销售水票(桶)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:background="#dbdbdb" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/include_total_di2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26px"
+                android:text="128"
+                android:textColor="#fd9a00"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14px"
+                android:text="水票支付(张)"
+                android:textColor="#282828"
+                android:textSize="22px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:gravity="center"
+        android:background="#FAFAFA"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="200px"
+            android:background="#dbdbdb"
+            android:layout_height="1px"/>
+        <TextView
+            android:textColor="#999999"
+            android:textSize="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:text="配送明细"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="200px"
+            android:background="#dbdbdb"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:text="填写物流"
+        android:textColor="#999999"
+        android:textSize="26px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+            android:id="@+id/phy_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:text="千钧"
+            android:textColor="#282828"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/phy_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:text="1800000000000"
+            android:textColor="#282828"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/phy_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:drawableLeft="@drawable/ic_client_address"
+        android:drawablePadding="18px"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:text="天津市河北区博爱道君临天下1710"
+        android:textSize="22px" />
+
+    <RelativeLayout
+        android:id="@+id/phy_relay_wu"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#fff"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="物流公司"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/phy_tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10px"
+            android:drawableRight="@drawable/ic_mine_back"
+            android:hint="请选择物流公司"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="快递单号"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <EditText
+            android:id="@+id/phy_tv_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="right"
+            android:hint="请填写物流单号"
+            android:maxEms="30"
+            android:singleLine="true"
+            android:textColor="#282828"
+            android:textColorHint="#999999"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/phy_fb_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="70px"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

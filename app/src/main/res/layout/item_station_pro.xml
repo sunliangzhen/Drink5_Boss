@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <FrameLayout
+            android:id="@+id/item_sta_pro_fralay"
+            android:layout_width="148px"
+            android:layout_height="148px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px">
+
+            <ImageView
+                android:id="@+id/item_stapro_imgv"
+                android:layout_width="148px"
+                android:layout_height="148px"
+                android:background="#cccccc"
+                android:padding="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_page_lv_pro" />
+
+            <ImageView
+                android:id="@+id/item_stapro_imgv_promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_04" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_sta_pro_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36px"
+            android:layout_toRightOf="@+id/item_sta_pro_fralay"
+            android:text="月眼山泉"
+            android:textColor="#282828"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/item_stapro_tv_attr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_sta_pro_tv_name"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/item_sta_pro_fralay"
+            android:text="规格：19L"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/item_stapro_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_sta_pro_fralay"
+            android:layout_toRightOf="@id/item_sta_pro_fralay"
+            android:text="￥20.00"
+            android:textColor="#fe4c52"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/item_sta_pro_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_sta_pro_fralay"
+            android:layout_alignParentRight="true"
+            android:text="260"
+            android:textColor="#282828"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_sta_pro_fralay"
+            android:layout_toLeftOf="@+id/item_sta_pro_tv_num"
+            android:text="月销"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+</LinearLayout>

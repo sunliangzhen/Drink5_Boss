@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px">
+
+            <ImageView
+                android:id="@+id/item_page_imgv_xin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_page_lv_xin" />
+
+            <TextView
+                android:id="@+id/item_page_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3px"
+                android:layout_toRightOf="@id/item_page_imgv_xin"
+                android:drawableLeft="@drawable/ic_page_lv_time"
+                android:drawablePadding="10px"
+                android:text="2015-10-24  16:00"
+                android:textColor="#999999"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/item_page_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/item_page_tv_time"
+                android:drawableLeft="@drawable/ic_page_lv_money"
+                android:drawablePadding="10px"
+                android:text="小费："
+                android:textColor="#999999"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/item_page_tv_money2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/item_page_tv_money"
+                android:text="￥2.00"
+                android:textColor="#fe4c52"
+                android:textSize="26px" />
+
+            <ImageView
+                android:id="@+id/item_page_imgv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_page_lv_state1" />
+
+            <TextView
+                android:id="@+id/item_page_tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50px"
+                android:text="配送中"
+                android:textColor="#2c82df"
+                android:textSize="24px"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="690px"
+            android:layout_height="1px"
+            android:layout_gravity="center_horizontal"
+            android:background="#ebebeb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="25px">
+
+            <CheckBox
+                android:id="@+id/item_pagelv_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/selector_list_cbox"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_pagelv_imgv_pro"
+                android:layout_width="148px"
+                android:layout_height="148px"
+                android:layout_marginRight="20px"
+                android:layout_toRightOf="@+id/item_pagelv_cbox"
+                android:background="#dbdbdb"
+                android:padding="1px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_page_lv_pro" />
+
+            <RelativeLayout
+                android:id="@+id/item_pagelv_linlay_proname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11px"
+                android:layout_toRightOf="@id/item_pagelv_imgv_pro">
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_proname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月眼山泉"
+                    android:textColor="#282828"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_pronum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/item_pagelv_tv_proname"
+                    android:text="(16L)"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_pronum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_toRightOf="@+id/item_pagelv_tv_pronum"
+                    android:text="X2"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/item_pagelv_imgv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_page_lv_phone2" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25px"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@id/item_pagelv_imgv_phone"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_pagelv_linlay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_pagelv_linlay_proname"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/item_pagelv_imgv_pro">
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxEms="6"
+                    android:text="凌先生"
+                    android:textColor="#282828"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25px"
+                    android:drawableLeft="@drawable/ic_page_lv_phone"
+                    android:drawablePadding="10px"
+                    android:text="15555555555"
+                    android:textColor="#ffc000"
+                    android:textSize="26px" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_pagelv_linlay_name"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/item_pagelv_imgv_pro">
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxEms="13"
+                    android:singleLine="true"
+                    android:text="天津市河北区君天大厦发的说法是丰富的订单"
+                    android:textColor="#999999"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/item_pagelv_tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="600m"
+                    android:textColor="#2c82df"
+                    android:textSize="26px" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="25px"
+            android:background="#ebebeb" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px">
+
+            <TextView
+                android:id="@+id/item_pagelv_tv_toall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="合计："
+                android:textColor="#292929"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/item_pagelv_tv_toallprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:layout_toRightOf="@id/item_pagelv_tv_toall"
+                android:text="￥2.00"
+                android:textColor="#fe4c52"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/item_pagelv_tv_huodao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:layout_toRightOf="@id/item_pagelv_tv_toallprice"
+                android:text="(货到付款)"
+                android:textColor="#fe4c52"
+                android:textSize="22px" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/item_pagelv_fb_list"
+                android:layout_width="160px"
+                android:layout_height="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:text="抢单"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                android:visibility="visible"
+                app:buttonColor="#ffc000"
+                app:cornerRadius="5px"
+                app:shadowEnabled="false" />
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/item_pagelv_fb_list2"
+                android:layout_width="200px"
+                android:layout_height="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:text="退回统一配送"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                android:visibility="gone"
+                app:buttonColor="#ffc000"
+                app:cornerRadius="5px"
+                app:shadowEnabled="false" />
+
+            <TextView
+                android:id="@+id/item_pagelv_tv_list"
+                android:layout_width="160px"
+                android:layout_height="55px"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_pagelv_fb_list"
+                android:background="@drawable/shape_list_tuidan"
+                android:gravity="center"
+                android:text="分配任务"
+                android:textColor="#ffc000"
+                android:textSize="28px"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/item_pagelv_tv_list2"
+                android:layout_width="160px"
+                android:layout_height="55px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_list_tuidan"
+                android:gravity="center"
+                android:text="退单回厅"
+                android:textColor="#ffc000"
+                android:textSize="28px"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

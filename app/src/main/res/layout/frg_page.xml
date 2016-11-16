@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+
+    <RelativeLayout
+        android:id="@+id/page_relay_01"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2C82DF">
+
+        <cn.zero.android.common.view.shapeimageview.CircularImageView
+            android:id="@+id/iv_main_head"
+            android:layout_width="74px"
+            android:layout_height="74px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:minHeight="74px"
+            android:minWidth="74px"
+            android:src="@drawable/ic_page_state"
+            app:siBorderColor="#2c82df"
+            app:siBorderWidth="1px" />
+
+        <com.zero.autolayout.widget.AutoRadioGroup
+            android:id="@+id/page_rg"
+            android:layout_width="406px"
+            android:layout_height="58px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_list_rg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/page_rdobtn_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_list_rb1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="任务大厅"
+                android:textColor="#2c82df"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/page_rdobtn_divide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_list_rb2"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="水工抢单"
+                android:textColor="#fff"
+                android:textSize="30px" />
+
+        </com.zero.autolayout.widget.AutoRadioGroup>
+
+        <TextView
+            android:id="@+id/page_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:drawableLeft="@drawable/ic_page_address"
+            android:drawablePadding="10px"
+            android:text="北京"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/page_linlay_01"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/page_relay_01"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/page_relay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_page_gray"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/page_cbox_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="时间"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:checked="false"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/page_relay_where"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_page_gray"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/page_cbox_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="距离"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:checked="false"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/page_relay_num"
+            android:background="@drawable/selector_page_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/page_cbox_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="数量"
+                android:clickable="false"
+                android:checked="false"
+                android:background="@android:color/transparent"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/page_relay_bttom"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa">
+
+        <TextView
+            android:id="@+id/page_tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:drawablePadding="10px"
+            android:text="订单：12单"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/page_tv_tong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@+id/page_tv_list"
+            android:drawableLeft="@drawable/ic_page_tong"
+            android:drawablePadding="10px"
+            android:gravity="bottom"
+            android:text="434"
+            android:textColor="#2880be"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/page_tv_tong"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/page_tv_tong"
+            android:text="桶"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/page_tv_allok"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ffc000"
+            android:gravity="center"
+            android:text="全抢"
+            android:textColor="#fff"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page_relay_bttom"
+        android:layout_below="@id/page_linlay_01">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_empty" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv_empty"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty2"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/net"
+            android:textColor="#999999"
+            android:textSize="28px"
+            android:visibility="gone" />
+        <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+            android:id="@+id/page_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipe_mode="both"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

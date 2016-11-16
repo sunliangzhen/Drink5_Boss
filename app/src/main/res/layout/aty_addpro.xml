@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="88px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px">
+
+                <RelativeLayout
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/addpro_imgv_pro"
+                        android:layout_width="98px"
+                        android:layout_height="98px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginTop="10px"
+                        android:background="#ebebeb"
+                        android:padding="1px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_default_pro" />
+
+                    <ImageView
+                        android:id="@+id/addpro_imgv_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_pro_cacel" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/addpro_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="商品名称"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/addpro_edxt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@id/addpro_tv_name"
+                    android:background="#fff"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addpro_relay_ptype"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="品牌分类"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/addpro_tv_pai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@drawable/ic_mine_back"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addpro_relay_stype"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="商品分类"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/addpro_tv_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@drawable/ic_mine_back"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/addpro_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="规格(L)"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/addpro_etxt_attr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@id/addpro_tv_num"
+                    android:background="#fff"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/addpro_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="价格(￥)"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/addpro_etxt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@id/addpro_tv_price"
+                    android:background="#fff"
+                    android:inputType="number"
+                    android:textColor="#333333"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingTop="20px"
+                android:text="商品介绍"
+                android:textColor="#808080"
+                android:textSize="28px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <EditText
+                    android:id="@+id/addpro_etxt_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:background="@drawable/shape_addpro_des"
+                    android:gravity="top"
+                    android:hint="请输入商品介绍"
+                    android:maxLength="100"
+                    android:padding="10px"
+                    android:textColor="#292929"
+                    android:textColorHint="#999999"
+                    android:textSize="24px" />
+            </LinearLayout>
+
+            <com.toocms.drink5.boss.ui.view.ExpandGrideView
+                android:id="@+id/addpro_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:horizontalSpacing="20px"
+                android:numColumns="5"
+                android:padding="30px"
+                android:verticalSpacing="20px">
+
+            </com.toocms.drink5.boss.ui.view.ExpandGrideView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <CheckBox
+                    android:id="@+id/addpro_cbox_yh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_list_cbox"
+                    android:drawablePadding="20px"
+                    android:text="优惠信息"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/addpro_edtext_yh"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:hint="请填写优惠描述"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:textColorHint="#cccccc"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:id="@+id/addpro_tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_addpro_add2"
+                    android:drawablePadding="20px"
+                    android:gravity="center"
+                    android:text="添加水票"
+                    android:textColor="#808080"
+                    android:textSize="28px" />
+
+
+            </RelativeLayout>
+
+            <cn.zero.android.common.view.linearlistview.LinearListView
+                android:id="@+id/addpro_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end|none"></cn.zero.android.common.view.linearlistview.LinearListView>
+
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/addpro_fb_ok"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="44px"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="#ffc000"
+                app:cornerRadius="5dp"
+                app:shadowEnabled="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

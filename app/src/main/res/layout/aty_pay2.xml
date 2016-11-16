@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/pay2_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <RadioButton
+            android:id="@+id/pay2_rbtn_01"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_pay_wei"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/selector_pay2_cbox"
+            android:text="微信支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+        <RadioButton
+            android:id="@+id/pay2_rbtn_02"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_pay_zhi"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/selector_pay2_cbox"
+            android:text="支付宝支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+    </RadioGroup>
+
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fb_pay2_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="44px"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

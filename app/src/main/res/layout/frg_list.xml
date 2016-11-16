@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+
+    <RelativeLayout
+        android:id="@+id/list_relay_01"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2C82DF">
+
+        <cn.zero.android.common.view.shapeimageview.CircularImageView
+            android:id="@+id/iv_main_head2"
+            android:layout_width="74px"
+            android:layout_height="74px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:minHeight="74px"
+            android:minWidth="74px"
+            android:src="@drawable/ic_page_state"
+            app:siBorderColor="#2c82df"
+            app:siBorderWidth="1px" />
+
+        <com.zero.autolayout.widget.AutoRadioGroup
+            android:id="@+id/list_rg"
+            android:layout_width="406px"
+            android:layout_height="58px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_list_rg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/list_rdobtn_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_list_rb1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="统一配送"
+                android:textColor="#2c82df"
+                android:textSize="30px" />
+
+            <RadioButton
+                android:id="@+id/list_rdobtn_divide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/seletor_list_rb2"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="分单配送"
+                android:textColor="#fff"
+                android:textSize="30px" />
+
+        </com.zero.autolayout.widget.AutoRadioGroup>
+
+        <TextView
+            android:id="@+id/list_tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:drawableLeft="@drawable/ic_page_address"
+            android:drawablePadding="10px"
+            android:text="天津"
+            android:textColor="#fff"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_linlay_01"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@+id/list_relay_01"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/list_relay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_page_gray">
+
+            <CheckBox
+                android:id="@+id/list_cbox_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="时间"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_relay_where"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_page_gray">
+
+            <CheckBox
+                android:id="@+id/list_cbox_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="距离"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_relay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_page_gray">
+
+            <CheckBox
+                android:id="@+id/list_cbox_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawablePadding="10px"
+                android:drawableRight="@drawable/ic_page_topn"
+                android:text="数量"
+                android:textColor="#282828"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#ebebeb" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/list_relay_bttom2"
+        android:layout_below="@id/list_linlay_01">
+
+        <ImageView
+            android:id="@+id/imgv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_empty"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv_empty"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty2"
+            android:textColor="#999999"
+            android:textSize="28px"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/net"
+            android:textColor="#999999"
+            android:textSize="28px"
+            android:visibility="gone" />
+
+        <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+            android:id="@+id/list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_relay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/list_tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_list_cbox"
+            android:drawablePadding="10px"
+            android:text="全选"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/list_tv_xuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_tv_list"
+            android:text="已选：0单"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/list_tv_tong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150px"
+            android:layout_toRightOf="@+id/list_tv_xuan"
+            android:drawableLeft="@drawable/ic_page_tong"
+            android:drawablePadding="10px"
+            android:gravity="bottom"
+            android:text="0"
+            android:textColor="#2880be"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_tv_tong"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_tv_tong"
+            android:text="桶"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/list_tv_fenpei"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ffc000"
+            android:gravity="center"
+            android:text="分单配送"
+            android:textColor="#fff"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_relay_bttom2"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/list_tv_list2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="30px"
+            android:drawablePadding="10px"
+            android:text="订单：12单"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/list_tv_tong2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:layout_toRightOf="@+id/list_tv_list2"
+            android:drawableLeft="@drawable/ic_page_tong"
+            android:drawablePadding="10px"
+            android:gravity="bottom"
+            android:text="434"
+            android:textColor="#2880be"
+            android:textSize="24px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/list_tv_tong2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/list_tv_tong2"
+            android:text="桶"
+            android:textColor="#292929"
+            android:textSize="24px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_relay_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/list_relay_bottom"
+        android:layout_below="@+id/list_relay_01"
+        android:background="#55000000"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list_lv_bttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:divider="@null"></ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

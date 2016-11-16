@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="20px"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <TextView
+        android:id="@+id/item_sta_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        android:text="营业执照"
+        android:textColor="#292929"
+        android:textSize="28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#ebebeb" />
+
+    <ImageView
+        android:id="@+id/item_sta_imgv"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="30px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_09" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/setpass_etxt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#fff"
+            android:hint="手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <EditText
+                android:id="@+id/setpass_etxt_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:hint="验证码"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30px"
+                android:layout_marginRight="30px"
+                android:background="#ebebeb" />
+
+            <TextView
+                android:id="@+id/setpass_tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送验证码"
+                android:textColor="#2c82df"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fb_setpass_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="70px"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

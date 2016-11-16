@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ff">#F5F5F5</color>
+    <color name="baise">#ffffff</color>
+    <color name="heise">#000000</color>
+    <color name="heise2">#282828</color>
+    <color name="baise2">#4d4d4d</color>
+    <color name="dd">#d2d2d2</color>
+
+    <color name="action_bg2">#2c82df</color>
+    <color name="action_bg3">#092F75</color>
+    <color name="action_text">#ffffff</color>
+    <color name="action_menu_text">#ffffff</color>
+    <color name="aaa">#f5f5f5</color>
+    <color name="touming">#00000000</color>
+    <color name="cccccc">#cccccc</color>
+    <color name="zise">#81579C</color>
+    <color name="ac">#1fff</color>
+    <color name="yzm">#ffc000</color>
+    <color name="nor">#666666</color>
+    <color name="ddd">#ff7800</color>
+    <color name="eee">#eeeeee</color>
+
+    <color name="action_bg">#2C82DF</color>
+    <color name="action_menu_color">#2C82DF</color>
+    <color name="action_title_color">#fff</color>
+</resources>

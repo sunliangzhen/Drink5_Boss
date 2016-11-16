@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent">
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/phy2_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="88px"
+        app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/record_relay_top"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2c82df">
+
+        <ImageView
+            android:id="@+id/record_imgv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/ic_menu_back" />
+
+        <TextView
+            android:id="@+id/record_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="水站记录"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/record_tv_xuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:drawableLeft="@drawable/ic_record_menu"
+            android:text="筛选"
+            android:textColor="#fff"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_empty"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgv_empty"
+        android:layout_centerHorizontal="true"
+        android:text="@string/empty"
+        android:textColor="#999999"
+        android:textSize="28px"
+        android:visibility="gone" />
+
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/record_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/record_relay_top"
+        app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+</RelativeLayout>

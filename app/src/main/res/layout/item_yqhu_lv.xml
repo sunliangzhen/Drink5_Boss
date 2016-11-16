@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_yhmlv_relay_01"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/item_yqhulv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="唐玉"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/item_yqhulv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_yqhulv_name"
+            android:layout_marginTop="15px"
+            android:text="2016-04-12"
+            android:textColor="#999999"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/item_yqhulv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="+20元"
+            android:textColor="#fb4747"
+            android:textSize="26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_yhmlv_relay_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:paddingBottom="10px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="10px"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/item_yqhulv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-04-02"
+            android:textColor="#999999"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/item_yqhulv_money2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="奖励20元"
+            android:textColor="#282828"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/item_yqhulv_peo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/item_yqhulv_money2"
+            android:text="发展2人"
+            android:textColor="#282828"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+</RelativeLayout>

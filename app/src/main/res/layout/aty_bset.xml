@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_account"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="账号管理"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/bset_imgv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+
+                <cn.zero.android.common.view.shapeimageview.CircularImageView
+                    android:id="@+id/set_imgv_head"
+                    android:layout_width="88px"
+                    android:layout_height="88px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20px"
+                    android:layout_toLeftOf="@+id/bset_imgv_01"
+                    android:minHeight="88px"
+                    android:minWidth="88px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_page_state"
+                    app:siBorderColor="#fff"
+                    app:siBorderWidth="1px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_mss"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="群发消息"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="营业/休息"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/bset_cbox_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_details_cbox"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="工作/休息"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/bset_cbox_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_details_cbox"
+                    android:button="@null" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_time01"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="营业时间"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/bset_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@drawable/ic_mine_back"
+                    android:text="9:30—17:30"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_time02"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="顺带时间"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/bset_tv_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="20px"
+                    android:drawableRight="@drawable/ic_mine_back"
+                    android:text="暂不支持顺带"
+                    android:textColor="#999999"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_zhi"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="支持货到付款"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/bset_cbox_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_details_cbox"
+                    android:button="@null" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="接受抵扣/取消抵扣"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:id="@+id/bset_cbox_deduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_details_cbox"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="声音通知"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_details_cbox"
+                    android:button="@null"
+                    android:checked="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_about"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="关于喝我"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_idea"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="意见反馈"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bset_relay_qin"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="清除缓存"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+            </RelativeLayout>
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/bset_fb_eixt"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="50px"
+                android:text="退出当前账号"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="#ffc000"
+                app:cornerRadius="5dp"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

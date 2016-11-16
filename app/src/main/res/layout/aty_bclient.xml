@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#2c82df">
+
+            <ImageView
+                android:id="@+id/bclient_imgv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:src="@drawable/ic_menu_back" />
+
+            <RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="58px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/bclient_imgv_back"
+                android:background="@drawable/shape_client_search"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/bclien_etxt_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="#fff"
+                    android:drawableLeft="@drawable/ic_client_search"
+                    android:drawablePadding="20px"
+                    android:gravity="center"
+                    android:hint="输入客户姓名"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bclien_ttv_xuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:drawableLeft="@drawable/ic_record_menu"
+                android:drawablePadding="10px"
+                android:text="筛选"
+                android:textColor="#fff"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bclient_linlay_01"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_below="@+id/bclient_relay_01"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/bclient_relay_piao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_page_gray">
+
+                <CheckBox
+                    android:id="@+id/bclient_cbox_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/ic_page_topn"
+                    android:text="水票"
+                    android:textColor="#282828"
+                    android:textSize="30px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bclient_relay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_page_gray">
+
+                <CheckBox
+                    android:id="@+id/bclient_cbox_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/ic_page_topn"
+                    android:text="时间"
+                    android:textColor="#282828"
+                    android:textSize="30px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bclient_relay_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_page_gray">
+
+                <CheckBox
+                    android:id="@+id/bclient_cbox_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:drawablePadding="10px"
+                    android:drawableRight="@drawable/ic_page_topn"
+                    android:text="水量"
+                    android:textColor="#282828"
+                    android:textSize="30px" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+                android:id="@+id/bclient_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+
+            <ImageView
+                android:id="@+id/imgv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_empty"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgv_empty"
+                android:layout_centerHorizontal="true"
+                android:text="@string/empty"
+                android:textColor="#999999"
+                android:textSize="28px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bclient_relay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5">
+
+        <CheckBox
+            android:id="@+id/bclient_cbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/selector_list_cbox"
+            android:drawablePadding="20px"
+            android:text="全选"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/bclient_tv_xuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/bclient_cbox"
+            android:text="已选：0人"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/bclient_tv_bbang"
+            android:layout_width="230px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ffc000"
+            android:gravity="center"
+            android:text="绑定给水工"
+            android:textColor="#fff"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+</RelativeLayout>

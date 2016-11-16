@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/refuse_rbtn_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_list_cbox"
+                android:drawablePadding="20px"
+                android:text="信息填写错误"
+                android:textColor="#000000"
+                android:textSize="28px" />
+
+            <CheckBox
+                android:id="@+id/refuse_rbtn_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_list_cbox"
+                android:drawablePadding="20px"
+                android:text="临时有事改时间再送"
+                android:textColor="#000000"
+                android:textSize="28px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/refuse_rbtn_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_list_cbox"
+                android:drawablePadding="20px"
+                android:text="距离太远"
+                android:textColor="#000000"
+                android:textSize="28px" />
+
+            <CheckBox
+                android:id="@+id/refuse_rbtn_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_list_cbox"
+                android:drawablePadding="20px"
+                android:text="其它问题"
+                android:textColor="#000000"
+                android:textSize="28px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/refuse_etxt_content"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/shape_list_rg"
+        android:gravity="top"
+        android:hint="请输入取消本次订单的原因"
+        android:padding="20px"
+        android:textColorHint="#cccccc"
+        android:textSize="24px" />
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fb_refuse_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="44px"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

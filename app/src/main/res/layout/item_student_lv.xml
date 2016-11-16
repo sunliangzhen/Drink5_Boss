@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/item_stulv_imgv_head"
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="19px"
+                android:layout_marginTop="10px"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_client_test" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/item_stulv_imgv_head">
+
+                <TextView
+                    android:id="@+id/item_stulv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:text="李师傅"
+                    android:textColor="#282828"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/item_studentlv_imgv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_page_lv_phone2" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="25px"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@id/item_studentlv_imgv_phone"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/item_studentlv_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_red"
+                    android:drawablePadding="10px"
+                    android:text="今日送水"
+                    android:textColor="#999999"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item_studentlv_tv_num"
+                    android:layout_toRightOf="@id/item_studentlv_tv_num"
+                    android:text="(桶)"
+                    android:textColor="#999999"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/item_stulv_tong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_studentlv_tv_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="30"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#ebebeb" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/item_studentlv_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_blue"
+                    android:drawablePadding="10px"
+                    android:text="今日送水票"
+                    android:textColor="#999999"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item_studentlv_tv_time"
+                    android:layout_toRightOf="@id/item_studentlv_tv_time"
+                    android:text="(张)"
+                    android:textColor="#999999"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/item_stulv_tv_piao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_studentlv_tv_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="100"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#ebebeb" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/item_studentlv_tv_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_yell"
+                    android:drawablePadding="10px"
+                    android:text="今日发展客户"
+                    android:textColor="#999999"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item_studentlv_tv_list"
+                    android:layout_toRightOf="@id/item_studentlv_tv_list"
+                    android:text="(人)"
+                    android:textColor="#999999"
+                    android:textSize="18px" />
+
+                <TextView
+                    android:id="@+id/item_stulv_tv_hu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_studentlv_tv_list"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="6000"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#ebebeb" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

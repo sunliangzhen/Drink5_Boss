@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/yhm_relay_top"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2c82df">
+
+        <ImageView
+            android:id="@+id/yhm_imgv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/ic_menu_back" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yhm_relay_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_yhm_bg" />
+
+                <TextView
+                    android:id="@+id/yhm_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="116px"
+                    android:text="我的优惠码"
+                    android:textColor="#fff"
+                    android:textSize="34px" />
+
+                <com.toocms.drink5.boss.ui.view.AutoCardView
+                    android:id="@+id/cardview"
+                    android:layout_width="480px"
+                    android:layout_height="100px"
+                    android:layout_below="@id/yhm_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="38px"
+                    android:background="#fff"
+                    app:cardCornerRadius="50px">
+
+                    <TextView
+                        android:id="@+id/yhm_tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0000000000"
+                        android:textColor="#292929"
+                        android:textSize="50px" />
+                </com.toocms.drink5.boss.ui.view.AutoCardView>
+
+                <TextView
+                    android:id="@+id/yhm_tv_share"
+                    android:layout_width="290px"
+                    android:layout_height="88px"
+                    android:layout_below="@+id/cardview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:background="@drawable/shape_list_rg2"
+                    android:gravity="center"
+                    android:text="分享"
+                    android:textColor="#fff"
+                    android:textSize="32px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="200px"
+                    android:layout_height="1px"
+                    android:background="#ebebeb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:text="使用方法"
+                    android:textColor="#999999"
+                    android:textSize="26px" />
+
+                <View
+                    android:layout_width="200px"
+                    android:layout_height="1px"
+                    android:background="#ebebeb" />
+
+            </LinearLayout>
+
+            <cn.zero.android.common.view.linearlistview.LinearListView
+                android:id="@+id/yhm_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end|none"></cn.zero.android.common.view.linearlistview.LinearListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200px" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/share_relay"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4c000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30px"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15px"
+                    android:drawableTop="@drawable/ic_qq2"
+                    android:gravity="center"
+                    android:text="QQ"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/share_wei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15px"
+                    android:drawableTop="@drawable/ic_wei"
+                    android:gravity="center"
+                    android:text="微信"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/share_weip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="15px"
+                    android:drawableTop="@drawable/ic_weip"
+                    android:gravity="center"
+                    android:text="朋友圈"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="20px"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ebebeb" />
+
+            <TextView
+                android:id="@+id/yhm_share_tv_cacel"
+                android:layout_width="match_parent"
+                android:layout_height="68px"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#2c82df"
+                android:textSize="28px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88px"
+    android:background="#fff"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/item_phy2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="圆通快递"
+        android:textColor="#282828"
+        android:textSize="28px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb" />
+</RelativeLayout>

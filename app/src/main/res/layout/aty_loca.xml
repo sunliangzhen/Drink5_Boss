@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2c82df">
+
+        <ImageView
+            android:id="@+id/loca_imgv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/ic_menu_back" />
+
+        <RelativeLayout
+            android:id="@+id/loca_relay_search"
+            android:layout_width="550px"
+            android:layout_height="58px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/loca_imgv_back"
+            android:background="@drawable/shape_client_search">
+
+            <TextView
+                android:id="@+id/loca_edit_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#fff"
+                android:drawableLeft="@drawable/ic_client_search"
+                android:drawablePadding="20px"
+                android:gravity="center"
+                android:text="搜索地址"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700px">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="700px"
+            android:clickable="true" />
+
+
+        <ImageView
+            android:id="@+id/location_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_location_position" />
+
+        <ImageView
+            android:id="@+id/location_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="345px"
+            android:src="@drawable/ic_location_center" />
+
+    </RelativeLayout>
+
+    <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+        android:id="@+id/loca_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+
+</LinearLayout>

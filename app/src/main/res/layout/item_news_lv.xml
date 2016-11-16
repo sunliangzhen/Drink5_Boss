@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingBottom="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/item_news_tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="[订单消息]"
+            android:textColor="#2063ac"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/item_newslv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_news_tv_01"
+            android:layout_marginTop="20px"
+            android:maxEms="25"
+            android:singleLine="true"
+            android:text="甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站甘甜水站"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/item_newslv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20px"
+            android:text="3月24日 9:00"
+            android:textColor="#999999"
+            android:textSize="22px" />
+    </RelativeLayout>
+</LinearLayout>

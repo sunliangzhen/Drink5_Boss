@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_mine_bg" />
+
+                <ImageView
+                    android:id="@+id/smin_imgv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="20px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_back" />
+
+                <cn.zero.android.common.view.shapeimageview.CircularImageView
+                    android:id="@+id/iv_mine_head"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginTop="50px"
+                    android:minHeight="198px"
+                    android:minWidth="198px"
+                    android:src="@drawable/ic_mine_head"
+                    app:siBorderAlpha="0.5"
+                    app:siBorderColor="#ffffff"
+                    app:siBorderWidth="10px" />
+
+                <TextView
+                    android:id="@+id/smine_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_mine_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30px"
+                    android:text="李师傅"
+                    android:textColor="#fff"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/mine_relay_setnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_mine_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="35px"
+                    android:layout_toRightOf="@+id/smine_tv_name"
+                    android:drawableLeft="@drawable/ic_mind_re"
+                    android:drawablePadding="10px"
+                    android:gravity="center"
+                    android:text="编辑"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_record"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_record"
+                    android:drawablePadding="30px"
+                    android:text="配送记录"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_total"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_toall"
+                    android:drawablePadding="30px"
+                    android:text="我的统计"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_client"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_people"
+                    android:drawablePadding="30px"
+                    android:text="我的客户"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_student"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_friend"
+                    android:drawablePadding="30px"
+                    android:text="我的同事"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_yhm"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_yhm"
+                    android:drawablePadding="30px"
+                    android:text="优惠码"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_yq"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_yq"
+                    android:drawablePadding="30px"
+                    android:text="我的邀请"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/mine_relay_news"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_marginTop="20px"
+                android:background="#fff"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_mine_news"
+                    android:drawablePadding="30px"
+                    android:text="我的信息"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_mine_back" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

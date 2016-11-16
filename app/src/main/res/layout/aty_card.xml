@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/card_rbtn_01"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#fff"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_pay_wei"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/selector_pay2_cbox"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="微信支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+        <CheckBox
+            android:id="@+id/card_rbtn_02"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#fff"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_pay_zhi"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/selector_pay2_cbox"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="支付宝支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+
+        <ListView
+            android:id="@+id/card_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#fff"></ListView>
+
+        <TextView
+            android:id="@+id/card_tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:layout_marginTop="20px"
+            android:background="#fff"
+            android:drawableLeft="@drawable/jia"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="添加银行卡"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <RelativeLayout
+            android:id="@+id/card_relay_setpass"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="20px"
+            android:background="#fff"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/card_tv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="添加支付密码"
+                android:textColor="#282828"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/card_tv_hui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/card_tv_01"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/card_tv_01"
+                android:text="(此密码为结算时的支付密码)"
+                android:textColor="#999999"
+                android:textSize="20px" />
+            <TextView
+                android:id="@+id/card_tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_alignBottom="@+id/card_tv_01"
+                android:layout_toLeftOf="@+id/card_imgv_01"
+                android:text="已设置"
+                android:layout_marginRight="20px"
+                android:textColor="#999999"
+                android:textSize="20px" />
+
+            <ImageView
+                android:id="@+id/card_imgv_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mine_back" />
+        </RelativeLayout>
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/fb_card_ok"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            app:buttonColor="#ffc000"
+            app:cornerRadius="5dp"
+            android:visibility="gone"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_relay_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a000"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/card_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50px"
+            android:background="@drawable/shape_list_rg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#282828"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/card_tv_jiechu"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_above="@+id/card_tv_cancel"
+            android:layout_marginBottom="25px"
+            android:background="@drawable/shape_list_rg"
+            android:gravity="center"
+            android:text="解除绑定"
+            android:textColor="#282828"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+</RelativeLayout>

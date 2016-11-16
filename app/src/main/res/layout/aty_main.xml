@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f5f5f5" />
+
+    <com.zero.autolayout.widget.AutoRadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="97px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_tab_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/selector_tab_main_bottom_page"
+            android:gravity="center"
+            android:text="任务大厅"
+            android:textColor="@color/selector_tab"
+            android:textSize="20px" />
+
+        <RadioButton
+            android:id="@+id/rbtn_tab_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/selector_tab_main_bottom_list"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textColor="@color/selector_tab"
+            android:textSize="20px" />
+
+        <RadioButton
+            android:id="@+id/rbtn_tab_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/selector_tab_main_bottom_news"
+            android:gravity="center"
+            android:text="我的消息"
+            android:textColor="@color/selector_tab"
+            android:textSize="20px" />
+
+        <RadioButton
+            android:id="@+id/rbtn_tab_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="10px"
+            android:drawableTop="@drawable/selector_tab_main_bottom_mine"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="@color/selector_tab"
+            android:textSize="20px" />
+    </com.zero.autolayout.widget.AutoRadioGroup>
+
+</LinearLayout>

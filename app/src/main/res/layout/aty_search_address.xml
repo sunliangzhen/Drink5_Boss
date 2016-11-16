@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_address_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#2c82df"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/search_imgv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/ic_menu_back" />
+
+        <RelativeLayout
+            android:id="@+id/seach_relay_search"
+            android:layout_width="550px"
+            android:layout_height="58px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/search_imgv_back"
+            android:background="@drawable/shape_client_search">
+
+            <EditText
+                android:id="@+id/search_address_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#fff"
+                android:drawableLeft="@drawable/ic_client_search"
+                android:drawablePadding="20px"
+                android:gravity="center"
+                android:hint="搜索地址"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divider"
+        android:background="#C8C2BA" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="20px"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

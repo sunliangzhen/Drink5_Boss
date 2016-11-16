@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.toocms.drink5.boss">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 蓝牙分享所需的权限 -->
+
+    <application
+        android:name=".database.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/a"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.CustomActionBar">
+
+        <!--必须注册的service-->
+        <service android:name="com.toocms.frame.crash.AbsSendCrashService" />
+        <service android:name=".ui.lar.staService" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!-- 设计图尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Hq1TKva6enLPVRTODBDnPlX2OYrXWZZI" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="579abb46e0f55a1bb300170f"></meta-data>
+
+        <activity android:name=".ui.lar.SplashAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--当使用选择图片时需要注册的Activity-->
+        <activity
+            android:name="cn.zero.android.common.view.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="com.toocms.frame.ui.imageselector.SelectImageAty" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <data android:scheme="tencent1105561966" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 支付宝默认页面 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".ui.lar.LoginAty" />
+        <activity android:name=".ui.lar.LarAty" />
+        <activity android:name=".ui.lar.GuideAty" />
+        <activity android:name=".ui.lar.RegisterAty" />
+        <activity android:name=".ui.lar.Register2Aty" />
+        <activity android:name=".ui.lar.Register3Aty" />
+        <activity android:name=".ui.lar.LocaAty" />
+        <activity android:name=".ui.lar.SearchAddressAty" />
+        <activity android:name=".ui.lar.JieshaoAty" />
+        <activity android:name=".ui.MainAty" />
+        <activity android:name=".ui.page.DistaskAty" />
+        <activity android:name=".ui.prodetilas.Prodetilas" />
+        <activity android:name=".ui.prodetilas.PhyAty" />
+        <activity android:name=".ui.prodetilas.Phy2Aty" />
+        <activity android:name=".ui.mine.mines.MinesAty" />
+        <activity android:name=".ui.news.NewsdetailsAty" />
+        <activity android:name=".ui.mine.mines.RecordAty" />
+        <activity android:name=".ui.mine.mines.FilterAty" />
+        <activity android:name=".ui.mine.mines.TotalAty" />
+        <activity android:name=".ui.mine.mines.ClientAty" />
+        <activity android:name=".ui.mine.mines.ClientbeiAty" />
+        <activity android:name=".ui.mine.mines.StudentAty" />
+        <activity android:name=".ui.mine.mines.Student2Aty" />
+        <activity android:name=".ui.mine.mines.YhmAty" />
+        <activity android:name=".ui.mine.mines.yq.YqAty" />
+        <activity android:name=".ui.mine.mines.yq.YqhuAty" />
+        <activity android:name=".ui.mine.mines.yq.YqpaiAty" />
+        <activity android:name=".ui.mine.mines.news.NewsAty" />
+        <activity android:name=".ui.mine.mines.news.PingAty" />
+        <activity android:name=".ui.mine.mines.setnews.SetnewsAty" />
+        <activity android:name=".ui.mine.mines.setnews.BangAty" />
+        <activity android:name=".ui.mine.pro.BproAty" />
+        <activity android:name=".ui.mine.pro.AddproAty" />
+        <activity android:name=".ui.mine.pro.ProtypeAty" />
+        <activity android:name=".ui.mine.pro.Bprodetails" />
+        <activity android:name=".ui.mine.money.MoneyAty" />
+        <activity android:name=".ui.mine.money.MonqinAty" />
+        <activity android:name=".ui.mine.money.Pay2Aty" />
+        <activity android:name=".ui.mine.money.ApplayAty" />
+        <activity android:name=".ui.mine.card.CardAty" />
+        <activity android:name=".ui.mine.card.AddcardAty" />
+        <activity android:name=".ui.mine.card.SetpassAty" />
+        <activity android:name=".ui.mine.card.Setpass2Aty" />
+        <activity android:name=".ui.mine.client.BclientAty" />
+        <activity android:name=".ui.mine.client.Bfilterty" />
+        <activity android:name=".ui.mine.client.Bbang" />
+        <activity android:name=".ui.mine.MystuAty" />
+        <activity android:name=".ui.mine.Mystu2Aty" />
+        <activity android:name=".ui.mine.EwmAty" />
+        <activity android:name=".ui.mine.StationAty" />
+        <activity android:name=".ui.mine.set.SetAty" />
+        <activity android:name=".ui.mine.set.AccountAty" />
+        <activity android:name=".ui.mine.set.AddaccountAty" />
+        <activity android:name=".ui.mine.set.AboutAty" />
+        <activity android:name=".ui.mine.set.IdeaAty" />
+        <activity android:name=".ui.mine.set.MessageAty" />
+        <activity android:name=".ui.page.RefuseAty" />
+        <activity android:name=".ui.myselectorimg.Myselectorimg" />
+        <activity android:name=".ui.prodetilas.SayAty" />
+        <activity android:name=".ui.lar.RoutePlanDemo" />
+        <activity android:name=".ui.prodetilas.PhydetailsAty" />
+        <activity android:name=".ui.mine.Updapeaddress" />
+    </application>
+
+</manifest>

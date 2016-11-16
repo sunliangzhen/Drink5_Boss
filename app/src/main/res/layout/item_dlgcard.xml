@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_marginLeft="30px"
+        android:id="@+id/item_dlgcard_imgv_head"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30px"
+        android:layout_toLeftOf="@+id/bset_imgv_01"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_mine_head" />
+
+    <TextView
+        android:id="@+id/item_dlgcard_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_dlgcard_imgv_head"
+        android:text="家家利水站"
+        android:textColor="#292929"
+        android:textSize="28px" />
+
+
+</RelativeLayout>

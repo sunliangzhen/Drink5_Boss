@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20px"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/rules_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/shape_yell"
+        android:drawablePadding="20px"
+        android:gravity="center_vertical"
+        android:text="送给好友的"
+        android:textColor="#292929"
+        android:textSize="26px" />
+    <TextView
+        android:id="@+id/rules_tv_content"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发的卡房间爱上课了房间爱上了房间按时付款了发的卡房间爱上课了房间爱上了房间按时付款了发的卡房间爱上课了房间爱上了房间按时付款了"
+        android:layout_marginLeft="30px"
+        android:textColor="#999999"
+        android:lineSpacingExtra="10px"
+        android:textSize="26px" />
+</LinearLayout>

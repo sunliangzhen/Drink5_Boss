@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="20px"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_content_shuipiao" />
+
+    <TextView
+        android:id="@+id/item_bprodlv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="农夫山泉买10送1"
+        android:textColor="#292929"
+        android:textSize="26px" />
+
+    <TextView
+        android:id="@+id/item_bprodlv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:gravity="right"
+        android:text="￥20.00"
+        android:textColor="#fb4747"
+        android:textSize="26px" />
+
+</LinearLayout>

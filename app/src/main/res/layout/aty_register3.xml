@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="水站名称:"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/res2_etxt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20px"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dbdbdb" />
+
+                <RelativeLayout
+                    android:id="@+id/res3relay_loca"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px">
+
+                    <TextView
+                        android:id="@+id/res3_tv_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="水站地址"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/res3_tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="20px"
+                        android:drawableRight="@drawable/ic_mine_back"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#dbdbdb" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/res3relay_loca2"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px">
+
+                    <TextView
+                        android:id="@+id/res3_tv_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="楼号-门牌号:"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/res3_tv_address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/res3_tv_03"
+                        android:background="#fff"
+                        android:maxEms="15"
+                        android:maxLength="15"
+                        android:paddingLeft="30px"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#dbdbdb" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="联系电话:"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <EditText
+                        android:id="@+id/res3_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:gravity="center_vertical"
+                        android:maxLength="11"
+                        android:paddingLeft="20px"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dbdbdb" />
+
+                <RelativeLayout
+                    android:id="@+id/res3_relay_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="销售品牌"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/res3_tv_pingpai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="20px"
+                        android:drawableRight="@drawable/ic_mine_back"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#dbdbdb" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/res3_relay_jieshao"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="水站介绍"
+                        android:textColor="#292929"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/res3_tv_jieshao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="20px"
+                        android:drawableRight="@drawable/ic_mine_back"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:textSize="28px" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <com.zero.autolayout.widget.AutoRadioGroup
+                android:id="@+id/res3_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingTop="20px">
+
+                <RadioButton
+                    android:id="@+id/res3_rbtn_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/selector_list_cbox"
+                    android:drawablePadding="20px"
+                    android:text="桶装水商户"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+
+                <RadioButton
+                    android:id="@+id/res3_rbtn_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_list_cbox"
+                    android:drawablePadding="20px"
+                    android:text="高端水商户"
+                    android:textColor="#292929"
+                    android:textSize="28px" />
+            </com.zero.autolayout.widget.AutoRadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="证件"
+                android:textColor="#999999"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="#fff"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingTop="20px"
+                android:text="营业执照"
+                android:textColor="#292929"
+                android:textSize="28px" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingTop="10px">
+
+                <RelativeLayout
+                    android:layout_width="170px"
+                    android:layout_height="170px">
+
+                    <ImageView
+                        android:id="@+id/res3_imgv_card"
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginTop="10px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_photo" />
+
+                    <ImageView
+                        android:id="@+id/res3_imgv_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_pro_cacel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px"
+                android:paddingTop="20px"
+                android:text="卫生证明"
+                android:textColor="#292929" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingBottom="20px"
+                android:paddingLeft="30px">
+
+
+                <RelativeLayout
+                    android:layout_width="170px"
+                    android:layout_height="170px">
+
+                    <ImageView
+                        android:id="@+id/res3_imgv_card2"
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginTop="10px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_photo" />
+
+                    <ImageView
+                        android:id="@+id/res3_imgv_cancel2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_pro_cacel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <cn.zero.android.common.view.FButton
+                android:id="@+id/res3_fb_ok"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="70px"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="32px"
+                app:buttonColor="#ffc000"
+                app:cornerRadius="5dp"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yqpai_tv_jin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:gravity="center"
+                android:text="区域排名"
+                android:textColor="#282828"
+                android:textSize="28px" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="25px"
+                android:background="#ebebeb" />
+
+            <TextView
+                android:id="@+id/yqpai_tv_ming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/normal_white_pressed_gray"
+                android:gravity="center"
+                android:text="全国排名"
+                android:textColor="#282828"
+                android:textSize="28px" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/yqpai_v_line"
+            android:layout_width="120px"
+            android:layout_height="2px"
+            android:background="#2c82df" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebebeb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="20px"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_yqpai_pai"
+                android:drawablePadding="10px"
+                android:text="排名:"
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/yqpai_tv_pai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="0"
+                android:textColor="#282828"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_yqpai_num"
+                android:drawablePadding="10px"
+                android:text="人数:"
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/yqpai_tv_peo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="0"
+                android:textColor="#282828"
+                android:textSize="24px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_yqpai_money"
+                android:drawablePadding="10px"
+                android:text="金额:"
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/yqpai_tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="0"
+                android:textColor="#282828"
+                android:textSize="24px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px">
+
+        <ImageView
+            android:id="@+id/imgv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_empty"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgv_empty"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty"
+            android:textColor="#999999"
+            android:textSize="28px"
+            android:visibility="gone" />
+
+        <cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView
+            android:id="@+id/yqpai_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:swipe_mode="both"></cn.zero.android.common.view.swipetoloadlayout.view.SwipeToLoadRecyclerView>
+    </RelativeLayout>
+
+</LinearLayout>

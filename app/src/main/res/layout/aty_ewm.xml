@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="580px"
+        android:layout_marginTop="60px"
+        android:background="@drawable/shape_ewm">
+
+        <ImageView
+            android:id="@+id/ewm_imgv"
+            android:layout_width="384px"
+            android:layout_height="384px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70px"
+            android:src="@drawable/ic_client_test" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30px"
+            android:text="邀请好友扫描二维码， 下载喝我"
+            android:textColor="#999999"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fb_ewm_ok"
+        android:layout_width="690px"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70px"
+        android:text="保存到相册"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

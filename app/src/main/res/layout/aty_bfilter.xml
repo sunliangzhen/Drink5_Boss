@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="业务类型"
+            android:textColor="#292929"
+            android:textSize="28px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            android:paddingRight="1px">
+
+            <CheckBox
+                android:id="@+id/bfilter_cbox_01"
+                android:layout_width="210px"
+                android:layout_height="60px"
+                android:background="@drawable/selector_filter_cbox"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/selector_filter_cox"
+                android:textSize="28px" />
+
+
+            <CheckBox
+                android:id="@+id/bfilter_cbox_03"
+                android:layout_width="210px"
+                android:layout_height="60px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/selector_filter_cbox"
+                android:button="@null"
+                android:gravity="center"
+                android:text="欠桶用户"
+                android:textColor="@color/selector_filter_cox"
+                android:textSize="28px" />
+
+            <CheckBox
+                android:id="@+id/bfilter_cbox_04"
+                android:layout_width="210px"
+                android:layout_height="60px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/selector_filter_cbox"
+                android:button="@null"
+                android:gravity="center"
+                android:text="未绑定水工"
+                android:textColor="@color/selector_filter_cox"
+                android:textSize="28px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/bfilter_cbox_05"
+                android:layout_width="210px"
+                android:layout_height="60px"
+                android:background="@drawable/selector_filter_cbox"
+                android:button="@null"
+                android:gravity="center"
+                android:text="已绑定水工"
+                android:textColor="@color/selector_filter_cox"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/bfilter_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="44px"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+
+</LinearLayout>
+

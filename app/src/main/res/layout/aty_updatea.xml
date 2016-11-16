@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/updad_loca"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#fff"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/updad_tv_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="水站地址"
+            android:textColor="#292929"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/updad_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="20px"
+            android:drawableRight="@drawable/ic_mine_back"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#dbdbdb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updad_loca2"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#fff"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/updad_tv_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="楼号-门牌号:"
+            android:textColor="#292929"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/updad_tv_address2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/updad_tv_03"
+            android:background="#fff"
+            android:maxEms="15"
+            android:maxLength="15"
+            android:paddingLeft="30px"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/upd_fb_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="70px"
+        android:gravity="center"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>

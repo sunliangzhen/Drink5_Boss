@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小费："
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_xiaofei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="￥2.00"
+            android:textColor="#fe4c52"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_paytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="(线下支付)"
+            android:textColor="#999999"
+            android:textSize="28px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_cbox"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已欠桶合计"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <CheckBox
+            android:id="@+id/details2_cbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/selector_details_cbox"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/details2_tv_barrel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/details2_cbox"
+            android:text="6"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_add"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="本次客户借桶"
+            android:textColor="#292929"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/details2_imgv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_details2_add" />
+
+        <TextView
+            android:id="@+id/details2_tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34px"
+            android:layout_toLeftOf="@+id/details2_imgv_add"
+            android:text="0"
+            android:textColor="#ffc000"
+            android:textSize="24px" />
+
+        <ImageView
+            android:id="@+id/details2_tv_jian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34px"
+            android:layout_toLeftOf="@+id/details2_tv_add"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_details2_jian" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_add2"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="本次客户还桶"
+            android:textColor="#292929"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/details2_imgv_add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_details2_add" />
+
+        <TextView
+            android:id="@+id/details2_tv_add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34px"
+            android:layout_toLeftOf="@+id/details2_imgv_add2"
+            android:text="0"
+            android:textColor="#ffc000"
+            android:textSize="24px" />
+
+        <ImageView
+            android:id="@+id/details2_tv_jian2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="34px"
+            android:layout_toLeftOf="@+id/details2_tv_add2"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_details2_jian" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:textColor="#999999"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_paystate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="货到付款"
+            android:textColor="#292929"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="商品总额"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥200.00"
+            android:textColor="#fe4c52"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="购买水票"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_piao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥200.00"
+            android:textColor="#fe4c52"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_jin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="京币抵扣"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_jinbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="—￥2.00"
+            android:textColor="#fe4c52"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details2_relay_piao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="水票抵扣"
+            android:textColor="#292929"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/details_pagelv_tv_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="—1张"
+            android:textColor="#fe4c52"
+            android:textSize="26px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="32px">
+
+        <TextView
+            android:id="@+id/detail_tv_shifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥200.00"
+            android:textColor="#fe4c52"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/detail_tv_shifu"
+            android:text="实付款："
+            android:textColor="#292929"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details_pagelv_tv_ordertime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="20px"
+        android:gravity="right"
+        android:text="下单时间： 2015-20-20 18:20"
+        android:textColor="#999999"
+        android:textSize="22px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#f5f5f5" />
+</LinearLayout>

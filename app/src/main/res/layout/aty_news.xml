@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#fff"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <ImageView
+                android:id="@+id/news_imgv_head"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:src="@drawable/ic_client_test" />
+
+            <TextView
+                android:id="@+id/news_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@id/news_imgv_head"
+                android:text="张师傅"
+                android:textColor="#282828"
+                android:textSize="28px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news_tv_name"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/news_imgv_head"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/news_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/news_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/news_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/news_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+
+                <ImageView
+                    android:id="@+id/news_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:src="@drawable/ic_news_xin" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/news_tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_red"
+                    android:drawablePadding="10px"
+                    android:text="配送平均时长"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+
+
+                <TextView
+                    android:id="@+id/news_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/news_tv_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="30"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#ebebeb" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/news_tv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_blue"
+                    android:drawablePadding="10px"
+                    android:text="配送总单量"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+
+
+                <TextView
+                    android:id="@+id/news_tv_piao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/news_tv_01"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="100"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="40px"
+                android:layout_gravity="center_vertical"
+                android:background="#ebebeb" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/news_tv_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/shape_yell"
+                    android:drawablePadding="10px"
+                    android:text="今日发展客户"
+                    android:textColor="#999999"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:id="@+id/news_tv_hu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/news_tv_list"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="6000"
+                    android:textColor="#282828"
+                    android:textSize="24px" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5f5f5"
+            android:paddingBottom="20px"
+            android:paddingLeft="30px"
+            android:paddingTop="20px"
+            android:text="服务水站"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/news_tv_station"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:background="#fff"
+            android:drawableLeft="@drawable/ic_new_shui"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="甘泉水站"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <RelativeLayout
+            android:id="@+id/nes_relay_ping"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="20px"
+            android:background="#fff"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_news_xin"
+                android:drawablePadding="20px"
+                android:text="评价"
+                android:textColor="#292929"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mine_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginTop="20px"
+            android:background="#fff"
+            android:drawableLeft="@drawable/ic_news_love"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:text="健康证书"
+            android:textColor="#292929"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="#ebebeb" />
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/news_imgv_ju"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@drawable/ic_news_test" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_relay_bottow"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:paddingRight="30px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/news_fb_dongjie"
+            android:layout_width="160px"
+            android:layout_height="55px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/news_fb_jiechu"
+            android:background="@drawable/shape_list_tuidan"
+            android:gravity="center"
+            android:text="冻结账户"
+            android:textColor="#ffc000"
+            android:textSize="28px" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/news_fb_jiechu"
+            android:layout_width="160px"
+            android:layout_height="55px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="center"
+            android:text="解除绑定"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:visibility="visible"
+            app:buttonColor="#ffc000"
+            app:cornerRadius="5px"
+            app:shadowEnabled="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

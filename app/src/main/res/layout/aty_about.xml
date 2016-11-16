@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <com.toocms.drink5.boss.ui.view.SelectableRoundedImageView
+        android:id="@+id/about_imgv"
+        android:layout_width="148px"
+        android:layout_height="148px"
+        android:scaleType="fitXY"
+        android:layout_marginTop="90px"
+        android:src="@drawable/ic_client_test"
+        app:sriv_left_bottom_corner_radius="8dp"
+        app:sriv_left_top_corner_radius="8dp"
+        app:sriv_right_bottom_corner_radius="8dp"
+        app:sriv_right_top_corner_radius="8dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:text="喝我"
+        android:textColor="#2f7ccc"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/about_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:layout_marginTop="40px"
+        android:gravity="center"
+        android:lineSpacingExtra="5px"
+        android:text="喝水时代已经到啦喝水时代已经到啦喝水时代已经到啦喝水时代已经到啦"
+        android:textColor="#999999"
+        android:textSize="24px" />
+</LinearLayout>

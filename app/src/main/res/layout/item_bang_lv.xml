@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="20px">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#f5f5f5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25px"
+        android:paddingRight="30px"
+        android:paddingTop="25px">
+
+        <ImageView
+            android:id="@+id/item_banglv_imgv_head"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_client_test" />
+
+        <TextView
+            android:id="@+id/item_banglv_imgv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/item_banglv_imgv_head"
+            android:text="博爱道水站"
+            android:textColor="#282828"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/item_banglv_imgv_bao"
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@id/item_banglv_imgv_name"
+            android:src="@drawable/ic_bao" />
+
+        <cn.zero.android.common.view.FButton
+            android:id="@+id/item_banglv_fb_list"
+            android:layout_width="132px"
+            android:layout_height="45px"
+            android:layout_alignParentRight="true"
+            android:text="绑定商铺"
+            android:textColor="@color/white"
+            android:textSize="24px"
+            android:visibility="visible"
+            app:buttonColor="#f00"
+            app:cornerRadius="5px"
+            app:shadowEnabled="false" />
+
+        <TextView
+            android:id="@+id/item_banglv_imgv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_banglv_imgv_name"
+            android:layout_marginTop="25px"
+            android:layout_toRightOf="@id/item_banglv_imgv_head"
+            android:drawableLeft="@drawable/ic_goods_z"
+            android:drawablePadding="10px"
+            android:text="娃哈哈  乐百氏"
+            android:textColor="#999999"
+            android:textSize="22px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_banglv_imgv_name2"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@id/item_banglv_imgv_head">
+
+            <TextView
+                android:id="@+id/item_banglv_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_client_address"
+                android:drawablePadding="15px"
+                android:maxEms="15"
+                android:singleLine="true"
+                android:text="天津市河北区君临大厦171000000000000000000000"
+                android:textColor="#999999"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/item_banglv_tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="600m"
+                android:textColor="#2c82df"
+                android:textSize="22px" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:id="@+id/item_banglv_relay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:paddingRight="30px">
+
+        <CheckBox
+            android:id="@+id/item_banglv_cbox_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawablePadding="10px"
+            android:drawableRight="@drawable/selector_bang_cbox"
+            android:text="招聘信息"
+            android:textColor="#999999"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_banglv_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:text="招聘水工6人，早九点，晚六点，距离水站进店的，工资在5—5k，有兴趣的可以绑定本水站"
+        android:textColor="#999999"
+        android:textSize="22px"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <ImageView
+            android:id="@+id/item_cardlv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_pay_wei" />
+
+        <TextView
+            android:id="@+id/item_cardlv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/item_cardlv"
+            android:text="中国农业银行"
+            android:textColor="#282828"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/item_cardlv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_cardlv_name"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/item_cardlv"
+            android:text="*5398储蓄卡"
+            android:textColor="#999999"
+            android:textSize="24px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ebebeb" />
+        <ImageView
+            android:id="@+id/item_cardlv_imgv_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_pay2_ncheck"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_cardlv_tv"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:text="添加银行卡"
+        android:textColor="#4d4d4d"
+        android:textSize="28px"
+        android:visibility="gone" />
+</LinearLayout>

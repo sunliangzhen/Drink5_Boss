@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20px"
+        android:text="支付方式"
+        android:textColor="#999999"
+        android:textSize="24px" />
+
+    <RadioGroup
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <RadioButton
+            android:id="@+id/pay_rbtn_01"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/selector_list_cbox"
+            android:text="在线支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ebebeb" />
+
+        <RadioButton
+            android:id="@+id/pay_rbtn_02"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_list_cbox"
+            android:text="线下支付"
+            android:textColor="#4d4d4d"
+            android:textSize="28px" />
+    </RadioGroup>
+
+    <cn.zero.android.common.view.FButton
+        android:id="@+id/fb_pay_ok"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="44px"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="32px"
+        app:buttonColor="#ffc000"
+        app:cornerRadius="5dp"
+        app:shadowEnabled="false" />
+</LinearLayout>
